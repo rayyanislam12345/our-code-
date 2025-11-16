@@ -1,0 +1,69 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 220px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+  font-family: sans-serif;
+}
+
+.sidebarTitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.classList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.classBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+.className,
+.projectName {
+  padding: 10px 14px;
+  border-radius: 8px;
+  background-color: #eaeaea;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-bottom: 4px;
+}
+
+.className:hover,
+.projectName:hover {
+  background-color: #d4d4d4;
+}
+
+.active {
+  background-color: #b0b0b0;
+  color: #000;
+  font-weight: bold;
+}
+
+.projectList {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.addClass {
+  background-color: #ccc;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 10px;
+}
+
+.addClass:hover {
+  background-color: #b3b3b3;
+}

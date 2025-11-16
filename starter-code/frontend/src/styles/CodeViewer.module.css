@@ -1,0 +1,187 @@
+
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #f0f0f0;
+}
+
+
+.codeBlock {
+  position: relative;
+  width: 800px;
+  max-width: 100%;
+  background: white;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  font-family: monospace;
+  overflow: auto;
+  border-radius: 4px;
+}
+
+.lineNumbers {
+  counter-reset: line;
+  margin: 0;
+  padding-left: 3rem;
+  list-style: none;
+}
+
+.lineNumbers li {
+  position: relative;
+  padding-left: 0.5rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.lineNumbers li::before {
+  counter-increment: line;
+  content: counter(line);
+  position: absolute;
+  left: -3rem;
+  width: 2.5rem;
+  text-align: right;
+  color: rgba(0,0,0,0.4);
+}
+
+
+.addCommentButton {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  line-height: 1;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.commentBox {
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  width: 250px;
+  z-index: 10;
+}
+
+.commentBox textarea {
+  width: 100%;
+  height: 80px;
+  font-family: monospace;
+}
+
+.commentActions {
+  margin-top: 0.5rem;
+  text-align: right;
+}
+
+.commentActions button {
+  margin-left: 0.5rem;
+}
+
+
+.commentArea {
+  position: relative;
+  width: 300px;
+}
+
+.commentCard {
+  position: absolute;
+  left: 0;
+  width: 260px;
+  background: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 
+    box-shadow 0.2s ease, 
+    background-color 0.2s ease, 
+    transform 0.15s ease;
+}
+
+.commentCard p {
+  margin: 0 0 0.5rem;
+}
+
+.commentCard small {
+  color: #666;
+}
+
+.activeCard {
+  box-shadow: 0 0 12px rgba(0, 123, 255, 0.6);
+  background-color: #e6f7ff;
+  border: 2px solid #007bff;
+  transform: scale(1.02);
+  z-index: 10;
+}
+
+
+.replyButton {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 0.5rem;
+}
+
+.repliesContainer {
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+  border-left: 2px solid #ccc;
+}
+
+.replyBubble {
+  background-color: #f7f7f7;
+  border-radius: 6px;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.replyBox {
+  margin-top: 0.5rem;
+}
+
+.replyTextarea {
+  width: 100%;
+  height: 60px;
+  font-family: monospace;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+.replyActions {
+  text-align: right;
+  margin-top: 0.25rem;
+}
+
+.replyActions button {
+  margin-left: 0.5rem;
+}
+
+
+.highlight {
+  background-color: #fff8b3;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+.highlight:hover {
+  background-color: #ffcc00;
+}
+.activeHighlight {
+  background-color: #ffcc00;
+}

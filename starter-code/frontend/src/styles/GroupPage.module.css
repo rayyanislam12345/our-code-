@@ -1,0 +1,255 @@
+.container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+  }
+  
+  .header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #e9ecef;
+  }
+  
+  .header h2 {
+    margin: 0 0 0.5rem 0;
+    color: #2c3e50;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  
+  .header p {
+    margin: 0;
+    color: #6c757d;
+    font-size: 1rem;
+  }
+  
+  .loading, .error {
+    text-align: center;
+    padding: 3rem;
+    font-size: 1.1rem;
+    color: #6c757d;
+  }
+  
+  .error {
+    color: #dc3545;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 8px;
+  }
+  
+  .submissionsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .noSubmissions {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 3rem;
+    color: #6c757d;
+    font-size: 1.1rem;
+    background-color: white;
+    border-radius: 12px;
+    border: 2px dashed #dee2e6;
+  }
+  
+  .submissionCard {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .submissionCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .cardHeader {
+    padding: 1.5rem;
+    border-bottom: 1px solid #e9ecef;
+  }
+  
+  .submitterInfo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .userCircle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    flex-shrink: 0;
+  }
+  
+  .submitterDetails h3 {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2c3e50;
+  }
+  
+  .submissionDate {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+  
+  .commentersSection {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  .commentersLabel {
+    font-size: 0.9rem;
+    color: #6c757d;
+    font-weight: 500;
+  }
+  
+  .commentersCircles {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .commenterCircle {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .commenterCircle:hover {
+    transform: scale(1.1);
+  }
+  
+  .noComments {
+    font-size: 0.9rem;
+    color: #adb5bd;
+    font-style: italic;
+  }
+  
+  .cardContent {
+    padding: 1.5rem;
+  }
+  
+  .filesInfo {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .filesCount {
+    color: #28a745;
+    font-weight: 500;
+  }
+  
+  .commentsCount {
+    color: #007bff;
+    font-weight: 500;
+  }
+  
+  .filesList {
+    margin-top: 1rem;
+  }
+  
+  .fileName {
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+    color: #495057;
+    border-bottom: 1px solid #f8f9fa;
+  }
+  
+  .fileName:last-child {
+    border-bottom: none;
+  }
+  
+  .cardActions {
+    padding: 1rem 1.5rem;
+    background-color: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+  }
+  
+  .viewCodeButton {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background-color: #e4d9c3;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .viewCodeButton:hover {
+    background-color: #dcbc7d;
+  }
+  
+  .viewCodeButton:active {
+    transform: translateY(1px);
+  }
+  
+  @media (max-width: 1024px) {
+    .submissionsGrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 1rem;
+    }
+    
+    .submissionsGrid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    
+    .submissionCard {
+      border-radius: 8px;
+    }
+    
+    .cardHeader, .cardContent, .cardActions {
+      padding: 1rem;
+    }
+    
+    .submitterInfo {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+    
+    .userCircle {
+      margin-right: 0;
+      margin-bottom: 0.5rem;
+    }
+    
+    .commentersSection {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+  }
