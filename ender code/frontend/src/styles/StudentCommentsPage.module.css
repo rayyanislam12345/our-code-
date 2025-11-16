@@ -1,0 +1,5 @@
+.container{padding:1rem}.list{list-style:none;padding:0;margin:0}.item{border:1px solid #ddd;border-radius:6px;padding:.75rem;margin-bottom:.5rem;cursor:pointer}.item:hover{background:#fafafa}.meta{display:flex;gap:.5rem;color:#555;font-size:.875rem}.title{font-weight:600}.error{color:#b91c1c}.actions{margin-top:1rem}
+.pagination{display:flex;align-items:center;justify-content:space-between;margin:.5rem 0 1rem}
+.pageButtons button{margin:0 .25rem}
+.pageActive{font-weight:700;text-decoration:underline}
+.assignmentMeta{display:flex;gap:1.5rem;color:#1d4ed8;font-size:.9em;margin-bottom:.25rem}

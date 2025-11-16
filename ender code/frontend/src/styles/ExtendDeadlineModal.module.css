@@ -1,0 +1,71 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modalPane {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  min-width: 350px;
+  max-width: 90vw;
+  max-height: 80vh;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+.section > label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.section input[type="datetime-local"] {
+  margin-top: 0.3rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.error {
+  color: red;
+  margin-top: 0.5rem;
+}
+
+.section { margin-bottom: 16px; }
+
+
+
+.originalInfo {
+  font-size: 12px;
+  color: #666;
+  margin-top: 4px;
+}
+
+.applyAllLabel { display: flex; align-items: center; gap: 8px; cursor: pointer; }
+
+
+.studentList { max-height: 200px; overflow: auto; border: 1px solid #ddd; border-radius: 4px; }
+
+.studentRow { padding: 8px; cursor: pointer; border-bottom: 1px solid #eee; transition: background 0.15s ease-in-out; }
+.studentRow:hover { background: #f5faff; }
+.selected { background: #e3f2fd; }
+
+.studentLabel { display: flex; align-items: center; gap: 8px; cursor: pointer; }
+
+.noSelected { font-size: 12px; color: #999; margin-top: 4px; }
+
+.modalActions { display: flex; gap: 0.5rem; margin-top: 1rem; justify-content: flex-end; }
+
+/* No custom button styles: match AssignmentCreationModal's plain buttons */

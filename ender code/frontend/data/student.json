@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Student A",
+    "code": "def make_fudge(chips, milk, vanilla):\n    pot = ThickPot()\n    pot.heat('low')\n    pot.add(chips)\n    pot.add(milk)\n    pot.stir()\n    pot.add(vanilla)\n    pot.stir()\n    return pot.cool()",
+    "submissionId": 1,
+    "submissionFileId": 1
+  },
+  {
+    "name": "Student B",
+    "code": "class Sink:\n    def __init__(self):\n        self.clean = True\n\n    def use(self):\n        self.clean = False\n\n    def clean_sink(self):\n        self.clean = True",
+    "submissionId": 2,
+    "submissionFileId": 2
+  },
+  {
+    "name": "Student C",
+    "code": "class Tree:\n    def __init__(self):\n        self.swing = 'tire'\n        self.memories = []\n\n    def add_memory(self, memory):\n        self.memories.append(memory)\n\n    def hope(self):\n        return 'Another child comes to play.'",
+    "submissionId": 3,
+    "submissionFileId": 3
+  },
+  {
+    "name": "Student D",
+    "code": "def drive_in_fog(visibility):\n    if visibility < 10:\n        print(\"Too dangerous to drive.\")\n    else:\n        print(\"Proceed with caution.\")",
+    "submissionId": 4,
+    "submissionFileId": 4
+  }
+]

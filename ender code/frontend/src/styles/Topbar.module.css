@@ -1,0 +1,75 @@
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e4d9c3;
+  padding: 10px 20px;
+  position: relative;
+  font-family: sans-serif;
+  height: 60px;
+}
+
+.menuButton {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.addButton {
+  background: none;
+  border: 1px solid black;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.profileIcon {
+  width: 30px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.actionsPanelInvis, .actionsPanelVis {
+  position: fixed;
+  right: 16px;
+  top: 68px;
+  border-radius: 10px;
+}
+
+.actionsPanelInvis {
+  visibility: hidden;
+}
+
+.actionsPanelVis {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  background-color: #f5f5f5;
+  border: 1px solid black;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding-left: 0.3%;
+  padding-right: 0.3%;
+  padding-top: 0.3%;
+  padding-bottom: 0.3%;
+}
+
+.logout {
+  background-color: #eaeaea;
+  margin: 0%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
